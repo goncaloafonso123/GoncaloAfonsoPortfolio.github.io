@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/robot.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Gonçalo Afonso &mdash;</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Robot logo" src="img/robot.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">About me</a></li>
+          <li><a class="main-nav-link" href="#meals">Recent work</a></li>
+          <li><a class="main-nav-link" href="#pricing">Resume</a></li>
+          <li><a class="main-nav-link" href="#social-links">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Welcome!</h1>
+            <p class="hero-description">Welcome to my portfolio website!</p>
+            <p class="hero-description" id="typing-effect">
+              <span id="fixed-text"
+                ><strong>I'm Gonçalo Afonso</strong>, a</span
+              >
+            </p>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/hero123.png" type="image/webp" />
+              <source srcset="img/hero123.png" type="image/png" />
+
+              <img
+                src="img/hero123.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <h2 class="heading-secondary"></h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number"></p>
+            <h3 class="heading-tertiary">Let me introduce myself</h3>
+            <p class="step-description">
+              I'm an experienced automation tester and
+              <strong>Java developer</strong> with about 1 year in the software
+              industry. I specialize in
+              <strong>automation and developing Java applications</strong> for
+              clients in various industries. Please take a look at my portfolio
+              andfeel free to contact me with any questions. Thanks for stopping
+              by!
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <div class="diets">
+              <h3 class="heading-tertiary">My Expertise :</h3>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Java</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Spring Boot</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Javascript</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Gherkin/Cucumber</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>SQL</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Jenkins</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    class="list-icon"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Git</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">My recent work</span>
+          <h2 class="heading-secondary">
+            Here are a few works I've worked on recently
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img src="img/code.png" class="meal-img" alt="Japanese Gyozas" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--java">Java</span>
+                <span class="tag tag--spring">Spring</span>
+              </div>
+              <p class="meal-title">Framework for automation of tests</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <span>
+                    <p>
+                      Framework build with Spring for automation of tests. (This
+                      is proprietary project and is cannot be shared or used
+                      without explicit permission from the company)
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img src="img/Site.png" class="meal-img" alt="Japanese Gyozas" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--java">Java</span>
+                <span class="tag tag--spring">Spring</span>
+                <span class="tag tag--html">Html</span>
+                <span class="tag tag--CSS">Css</span>
+              </div>
+              <br />
+              <p class="meal-title">Health Clinic Web-app</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <span>
+                    <p>
+                      Development of a web-app for a Health Clinic, where users
+                      can register themselves, login, schedule and reschedule
+                      appointments, manage invoices (through an API).
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/FinancialManager.png"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--java">Java</span>
+              </div>
+              <br />
+              <p class="meal-title">Financial Manager interface</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <span>
+                    <p>
+                      Creation of a Financial Manager. Project focused on
+                      correcting tests for the software to work properly.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/Upskillrogue.png"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--java">Java</span>
+              </div>
+              <br />
+              <p class="meal-title">Rogue-like Videogame</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <span>
+                    <p>
+                      Creation of a rogue-like videogame, where the user has
+                      different levels, enemies and skills to play with.
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a
+            href="https://github.com/goncaloafonso123"
+            class="link"
+            onclick="window.open(this.href, '_blank'); return false;"
+            >See more projects &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Resume</span>
+          <h2 class="heading-secondary">Download my CV here</h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <img
+                src="img/cvPhoto.png"
+                class="hero-img"
+                alt="Photo of my cv"
+              />
+            </header>
+            <div class="plan-sing-up">
+              <button href="#" class="btn btn--full" onclick="downloadPDF()">
+                Download PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <picture>
+              <img
+                src="img/home-main.svg"
+                class="hero-img"
+                alt="Photo of a programmer "
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a class="footer-logo">
+            <p class="footer-heading">Made by Gonçalo Afonso</p>
+          </a>
+
+          <ul class="social-links" id="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/goncaloafonso123/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/gon%C3%A7alo-afonso-76898a151/"
+                target="_blank"
+              >
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://github.com/goncaloafonso123"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ion-icon class="social-icon" name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+        <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Gonçalo Afonso
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact me</p>
+          <address class="contacts">
+            <p class="address">Lisboa,Portugal</p>
+            <p>
+              <a class="footer-link" href="tel:+351-939285467">+351-939285467</a
+              ><br />
+              <a class="footer-link" href="mailto:goncaloafonso1995@gmail.com"
+                >goncaloafonso1995@gmail.com"</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
