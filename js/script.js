@@ -123,7 +123,7 @@ function downloadPDF() {
   document.body.removeChild(link);
 }
 
-const words = ["developer", "automation tester", "Java enthusiast", "student"];
+const words = ["developer", "n automation tester", "Java enthusiast", "student"];
 const typingDelay = 100; // delay between typing each character
 const deleteDelay = 50; // delay between deleting each character
 const wordDelay = 1000; // delay between finishing a word and starting to delete it
